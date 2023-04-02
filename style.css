@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B0C0D;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header başlangıç */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #333 1px solid;
+    height: 8%;
+    width: 100vw;
+    position: fixed;
+    z-index: 10;
+    background-color: #0B0C0D;
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    font-size: 20px;
+    padding-left: 2vw;
+}
+
+.headerleft i {
+    cursor: pointer;
+}
+
+.headerleft img{
+    width: 32px;
+    height: 32px;
+}
+
+.youtube {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.youtube a {
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.headercenter {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    color: white;
+    font-size: 19px;
+}
+
+.headercenter .search {
+    color: white;
+    background-color: #0C0E0F;
+    font-size: 20px;
+    border: 1px solid #333;
+    border-radius: 56px;
+    padding: 0 30px;
+}
+
+.search a {
+    color: white;
+}
+
+.headercenter input {
+    background-color: #0C0E0F;
+    border: none;
+    outline: none;
+}
+
+.headercenter i {
+    cursor: pointer;
+    background-color: #0C0E0F;
+    padding: 12px;
+    border-radius: 100%;
+    transition: all .35s ease;
+}
+
+.headercenter i:hover {
+    background-color: #181A1B;
+    border-radius: 56px;
+}
+
+.headerright {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding-right: 2vw;
+    font-size: 18px;
+}
+
+.headerright i {
+    cursor: pointer;
+    background-color: #0C0E0F;
+    padding: 12px;
+    border-radius: 100%;
+    transition: all .35s ease;
+}
+
+.headerright i:hover {
+    background-color: #181A1B;
+    border-radius: 56px;
+}
+
+.headerright img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+/* Header bitiş */
+
+/* Side başlangıç */
+
+.sidebar {
+    height: 92vh;
+    width: 10%;
+    border-right: 1px solid #333;
+    font-size: 19px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    position: fixed;
+    z-index: 10;
+    background-color: #0B0C0D;
+    top: 8vh;
+}
+
+.sidebar i {
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.sidebar .anasayfa a {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .anasayfa {
+    transition: background-color .35s ease;
+}
+
+.sidebar .anasayfa:hover {
+    background-color: #181A1B;
+    border-radius: 56px;
+}
+
+.sidebar .abone {
+    transition: background-color .35s ease;
+}
+
+.sidebar .abone:hover {
+    background-color: #181A1B;
+    border-radius: 56px;
+}
+
+.sidebar .shorts  {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.sidebar .shorts a {
+    display: flex;
+    column-gap: 47px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .abone a {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .shorts {
+    transition: all .35s ease;
+}
+
+.sidebar .shorts:hover {
+    background-color: #181A1B;
+    border-radius: 56px;
+}
+
+.sidecontent {
+    display: flex;
+}
+
+/* Side bitiş */
+
+/* Content başlangıç */
+
+.content {
+    height: 92vh;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 10vh 0 0 22vh;
+}
+
+.content .vresmi {
+    position: relative;
+}
+
+.vresmi .image img {
+    width: 359px;
+    height: 202px;
+    cursor: pointer;
+}
+
+.content .vresmi .vdakika {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0b0c0de7;
+    margin: 10px;
+}
+
+.vcontent {
+    font-size: 15px;
+    width: 359px;
+}
+
+.vicerik {
+    display: flex;
+    column-gap: 10px;
+}
+
+.vcontent h3, .vicerik h4 {
+    cursor: pointer;
+}
+
+.vicerik img {
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.vicerik .picerik {
+    color: #555;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Content Bitiş */
+
+/* Media Başlangıç */
+
+@media screen and (max-width: 1670px) {
+
+    .content {
+        width: 100vw;
+    }
+    .sidebar {
+        width: 180px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sidebar .anasayfa a{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar .shorts a {
+        display: flex;
+        flex-direction: column;
+    }
+    .sidebar .abone a {
+        display: flex;
+        flex-direction: column;
+    }
+}
